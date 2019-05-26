@@ -1,0 +1,203 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>React</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/sky.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<img width="350" height="350" data-src="./img/react.png" alt="React logo" style="border:none; box-shadow: none;">
+					<h1>React</h1>
+					<p><small>A JavaScript library for building user interfaces</small></p>
+				</section>
+				<section height="100%" data-background="./img/fb.jpg" style="color:white">
+					<h2 style="font-weight: bold; color:white">The first signs of React</h2>
+					<p><small>React was created by Jordan Walke, a software engineer at Facebook. 
+						It was first deployed on Facebook's newsfeed in 2011 and later on Instagram.com in 2012. 
+					</small></p>
+				</section>
+				<section>
+					<h5>Google Search Trends</h5>
+					<img width="900" height="300" data-src="./img/trands_google.png" alt="React logo" style="border:none; box-shadow: none;">
+				</section>
+				<section>
+					<section>
+						<h2>Components</h2>
+						<pre><code class="hljs" data-trim data-line-numbers="1-3">
+&lt;x&gt;
+  ...
+&lt;/x&gt;
+						</code></pre>
+						<p class="fragment" style ="margin: 0 auto;border: 2px solid black; background-color: white; width: fit-content;padding: 10px;">A piece of the UI</p>
+					</section>
+					<section>
+						<div class="fragment" style="border-radius: 10px; border:2px solid #bdbda3 ;text-align: left;">
+							<div class="fragment" style="background-color: #dcdc67bd;margin: 5px; height: 100px;border: 2px solid orange; border-radius: 10px;"></div>
+							<div class="fragment" style="background-color: #dcdc67bd;margin: 5px; height: 200px;border: 2px solid orange; display: inline-block;width: 33%; border-radius: 10px"></div>
+							<div class="fragment" style="background-color: #dcdc67bd;margin: 5px; height: 100px;border: 2px solid orange; display: inline-block;width: 33%; border-radius: 10px; vertical-align: top;"></div>
+						</div>
+					</section>
+				</section>
+				<section>
+					<section>
+						<div class="fragment" style="border: 5px solid white; background-color: bisque; padding: 15px 45px; margin: auto; width: fit-content; border-radius: 25px;"><span>App</span></div>
+						<div style="display: flex; justify-content: center; padding: 15px 0">
+							<div class="fragment" style="border: 5px solid white; background-color: rgb(161, 167, 252); padding; padding: 40px 80px; margin: auto; width: fit-content; border-radius: 25px;"><span></span></div>
+							<div class="fragment" style="border: 5px solid white; background-color: rgb(255, 167, 167); padding: 40px 80px; margin: auto; width: fit-content; border-radius: 25px;"><span></span></div>
+						</div>
+						<div style="display: flex; justify-content: center; padding: 15px 0">
+							<div style="border: 5px solid transparent; background-color: transparent; padding: 40px 80px; margin: auto; width: fit-content; border-radius: 25px;"><span></span></div>
+							<div style="border: 5px solid transparent; background-color: transparent; padding: 40px 80px; margin: auto; width: fit-content; border-radius: 25px;"><span></span></div>
+							<div class="fragment" style="border: 5px solid white; background-color: rgb(184, 250, 140); padding: 40px 80px; margin: auto; width: fit-content; border-radius: 25px;"><span></span></div>
+							<div class="fragment" style="border: 5px solid white; background-color: rgb(241, 250, 124); padding: 40px 80px; margin: auto; width: fit-content; border-radius: 25px;"><span></span></div>
+						</div>
+					</section>
+					<section>
+						<div>
+							<div>
+								<img class="fragment" data-src="./img/Twitter_01.png" alt="React logo" style="margin: 0;border:none; box-shadow: none;">								
+							</div>
+							<div style="display: flex;justify-content: center;">
+								<div style="display: flex;flex-direction: column; margin-right: -2.5%;">
+									<img class="fragment" data-src="./img/Twitter_02.png" alt="React logo" style="margin: 0;border:none; box-shadow: none;">
+									<img class="fragment" data-src="./img/Twitter_04.png" alt="React logo" style="margin: 0;border:none; box-shadow: none;">
+								</div>
+								<div>
+									<img class="fragment" data-src="./img/Twitter_03.png" alt="React logo" style="margin: 0;border:none; box-shadow: none;">
+								</div>
+							</div>
+						</div>
+					</section>
+					<section>
+						<div class="fragment" style="border: 5px solid white; background-color: bisque; padding: 15px 45px; margin: auto; width: fit-content; border-radius: 25px;"><span>App</span></div>
+						<div style="display: flex; justify-content: center; padding: 15px 0">
+							<div class="fragment" style="border: 5px solid white; background-color: rgb(161, 167, 252); padding: 15px 45px; margin: auto; width: fit-content; border-radius: 25px;"><span>NavBar</span></div>
+							<div class="fragment" style="border: 5px solid white; background-color: rgb(255, 167, 167); padding: 15px 45px; margin: auto; width: fit-content; border-radius: 25px;"><span>Profile</span></div>
+							<div class="fragment" style="border: 5px solid white; background-color: rgb(184, 250, 140); padding: 15px 45px; margin: auto; width: fit-content; border-radius: 25px;"><span>Trends</span></div>
+							<div class="fragment" style="border: 5px solid white; background-color: rgb(241, 250, 124); padding: 15px 45px; margin: auto; width: fit-content; border-radius: 25px;"><span>Feed</span></div>
+						</div>
+						<div style="display: flex; justify-content: center; padding: 15px 0">
+							<div style="border: 5px solid transparent; background-color: transparent; padding: 40px 80px; margin: auto; width: fit-content; border-radius: 25px;"><span></span></div>
+							<div style="border: 5px solid transparent; background-color: transparent; padding: 40px 80px; margin: auto; width: fit-content; border-radius: 25px;"><span></span></div>
+							<div style="border: 5px solid transparent; background-color: transparent; padding: 40px 210px; margin: auto; width: fit-content; border-radius: 25px;"><span></span></div>
+							<div class="fragment" style="border: 5px solid white; background-color: rgb(161, 167, 252); padding: 15px 45px; margin: auto; width: fit-content; border-radius: 25px;"><span>Tweet</span></div>
+						</div>
+						<div style="display: flex; justify-content: center; padding: 15px 0">
+							<div style="border: 5px solid transparent; background-color: transparent; padding: 40px 80px; margin: auto; width: fit-content; border-radius: 25px;"><span></span></div>
+							<div style="border: 5px solid transparent; background-color: transparent; padding: 40px 80px; margin: auto; width: fit-content; border-radius: 25px;"><span></span></div>
+							<div style="border: 5px solid transparent; background-color: transparent; padding: 40px 170px; margin: auto; width: fit-content; border-radius: 25px;"><span></span></div>
+							<div class="fragment" style="border: 5px solid white; background-color: rgb(184, 250, 140); padding: 15px 45px; margin: auto; width: fit-content; border-radius: 25px;"><span>Like</span></div>
+						</div>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Simple component</h2>
+						<pre><code class="hljs" data-trim data-line-numbers="3-5">
+class Tweet {
+	state = {};
+	render() {
+		...
+	}
+}
+						</code></pre>
+						<span class="fragment" style=" background-color: #7ed3e0; padding: 20px; "> React Element</span>
+						</section>
+						<section>
+							<div style="display: flex;flex-direction: column-reverse">
+								<div style="display: flex;justify-content: space-between;">
+									<div class="fragment" >
+										<div style="border: 5px solid white; background-color: rgb(196, 246, 255); padding: 15px 45px; margin: auto; width: fit-content; border-radius: 25px;"><span>React Element</span></div>
+										<div style="display: flex; justify-content: center; padding: 15px 0">
+											<div style="border: 5px solid white; background-color: rgb(196, 246, 255); padding: 40px 80px; margin: auto; width: fit-content; border-radius: 25px;"></div>
+											<div style="border: 5px solid white; background-color: rgb(196, 246, 255); padding: 40px 80px; margin: auto; width: fit-content; border-radius: 25px;"></div>
+										</div>
+										<div style="border: 5px solid white; background-color: rgb(196, 246, 255); padding: 40px 80px; margin: auto; width: fit-content; border-radius: 25px;"></div>
+										<div style="display: flex; justify-content: center; padding: 15px 0">
+											<div style="border: 5px solid white; background-color: rgb(196, 246, 255); padding: 40px 80px; margin: auto; width: fit-content; border-radius: 25px;"></div>
+											<div style="border: 5px solid white; background-color: rgb(196, 246, 255); padding: 40px 80px; margin: auto; width: fit-content; border-radius: 25px;"></div>
+										</div>
+									</div>
+									<div class="fragment" >
+										<div style="border: 5px solid white; background-color: bisque; padding: 15px 45px; margin: auto; width: fit-content; border-radius: 25px;"><span>DOM Element</span></div>
+										<div style="display: flex; justify-content: center; padding: 15px 0">
+											<div style="border: 5px solid white; background-color: bisque; padding: 40px 80px; margin: auto; width: fit-content; border-radius: 25px;"></div>
+											<div style="border: 5px solid white; background-color: bisque; padding: 40px 80px; margin: auto; width: fit-content; border-radius: 25px;"></div>
+										</div>
+										<div style="border: 5px solid white; background-color: bisque; padding: 40px 80px; margin: auto; width: fit-content; border-radius: 25px;"></div>
+										<div style="display: flex; justify-content: center; padding: 15px 0">
+											<div style="border: 5px solid white; background-color: bisque; padding: 40px 80px; margin: auto; width: fit-content; border-radius: 25px;"></div>
+											<div style="border: 5px solid white; background-color: bisque; padding: 40px 80px; margin: auto; width: fit-content; border-radius: 25px;"></div>
+										</div>
+									</div>
+								</div>
+								<div style="display: flex;justify-content: space-between;margin-bottom: 20px;">
+									<div class="fragment" >
+										<div style="border: 5px solid white; color: white; font-weight: bold; background-color: rgb(176, 167, 255); padding: 15px 45px; margin: auto; width: fit-content; border-radius: 25px;"><span>Virtual DOM</span></div>
+									</div>
+									<div class="fragment" >
+										<div style="border: 5px solid white; color: white; font-weight: bold; background-color: rgb(176, 167, 255); padding: 15px 80px; margin: auto; width: fit-content; border-radius: 25px;"><span>Rial DOM</span></div>
+									</div>
+								</div>
+
+							</div>
+						</section>
+				</section>
+				<section>
+					<h1>
+						React
+					</h1>
+					<h4>reacts to stage changes</h4>
+				</section>
+				<section>
+					<div style="display: flex; justify-content: space-between;">
+						<div style="display: flex; flex-direction: column">
+							<img width="250" height="250" data-src="./img/angular2.png" alt="Angular logo" style="border:none; box-shadow: none;">
+							<span class="fragment"><b>Framework</b></span>
+						</div>
+						<div style="display: flex; flex-direction: column">
+							<img width="250" height="250" data-src="./img/react.png" alt="React logo" style="border:none; box-shadow: none;">
+							<span class="fragment"><b class="fragment">View</b> Library</span>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
